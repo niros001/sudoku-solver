@@ -193,6 +193,7 @@ const onReset = () => {
   solutions = [];
   document.getElementById('current-solution').innerText = '0';
   document.getElementById('total-solutions').innerText = '0';
+  document.getElementById('solve').removeAttribute('disabled');
   for(let i = 0 ; i < 9 ; i++) {
     for (let j = 0 ; j < 9 ; j++) {
       const square = document.getElementById(`${i}-${j}`);
@@ -210,6 +211,7 @@ const onSolve = () => {
   if (isBoardValid(board)) {
     solver(board);
     if (solutions.length) {
+      document.getElementById('solve').setAttribute('disabled', '');
       const currentSolution = 1;
       const totalSolutions = solutions.length;
       document.getElementById('current-solution').innerText = currentSolution.toString();

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="board-wrapper">
+        <div id="board"></div>
+    </div>
+
+    <div class="row">
+        <button onclick="onReset()">Reset</button>
+        <div id="numbers"></div>
+        <button onclick="onSolve()">Solve</button>
+    </div>
+    <b>NOTE: Maximum solutions shown: 15</b>
+    <div class="row">
+        <div class="nav-btn" onclick="onNav(-1)"> < </div>
+        <div><b id="current-solution">0</b> of <b id="total-solutions">0</b></div>
+        <div class="nav-btn" onclick="onNav(1)"> > </div>
+    </div>
+
+</div>
+</body>
+</html>

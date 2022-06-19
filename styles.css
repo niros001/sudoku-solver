@@ -11,8 +11,8 @@ body {
 }
 
 .board-wrapper {
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 304px;
+    min-height: 304px;
 }
 
 #board {
